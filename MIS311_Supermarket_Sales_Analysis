@@ -67,11 +67,8 @@ New York	10,613.69 USD
 Los Angeles	8,935.31 USD
 
 The revenue comparison shows that Chicago generated the highest total revenue, followed closely by New York. Los Angeles recorded the lowest total revenue among the three cities in the dataset.
-Row Labels	Sum of total_price
-Chicago	10813,94
-Los Angeles	8935,31
-New York	10613,69
-Grand Total	30362,94
+
+
 Key Insight 1: Chicago Generated the Highest Total Revenue
 
 Chicago generated the highest total revenue, with total sales of 10,813.94 USD, followed closely by New York with 10,613.69 USD. This shows that Chicago and New York were the strongest sales locations in the dataset. The supermarket can focus more on marketing activities and inventory planning in these cities to improve sales performance.
