@@ -1,1 +1,105 @@
+MIS 311 Assignment #1: Supermarket Sales Analysis
+Part 1: Data Analysis and Insight Generation
 
+This project performs Exploratory Data Analysis (EDA) on a Supermarket Sales dataset.
+The purpose is to understand the structure of the data, prepare it for analysis, and identify meaningful insights related to supermarket sales performance.
+
+1. Data Overview
+
+The selected dataset is the Supermarket Sales dataset, which was provided as part of the MIS 311 Assignment #1 materials. It contains information about supermarket sales transactions, including sales ID, branch, city, customer type, product name, product category, quantity sold, and total sales price.
+
+The original dataset includes 253 rows and 8 columns, where each row represents one sales transaction. This dataset is suitable for exploratory data analysis because it allows us to examine how sales performance differs by city and product category.
+
+Main Groups of Variables
+Variable Group	Examples
+Transaction Information	sale_id, branch
+Location Information	city
+Customer Information	customer_type
+Product Information	product_name, product_category
+Sales Performance	quantity, total_price
+2. Data Cleaning
+2.1 Checking for Missing Values
+
+The dataset was checked for missing values in each column.
+
+Column	Missing Values
+sale_id	0
+branch	0
+city	0
+customer_type	3
+product_name	0
+product_category	6
+quantity	3
+total_price	0
+
+The missing value check shows that missing values were found in customer_type, product_category, and quantity. Since the number of missing values was small, incomplete rows were removed to keep the analysis accurate.
+
+2.2 Checking for Duplicate Rows
+
+The dataset was checked for duplicate rows using Excel’s Remove Duplicates function.
+
+The dataset contained 3 duplicated rows. These duplicate rows were removed before analysis to ensure that each sales transaction was counted only once.
+
+2.3 Data Cleaning Summary
+
+Overall, the dataset required basic cleaning before analysis. The original dataset contained 253 rows and 8 columns. After removing 3 duplicate rows and incomplete records with missing values, the final cleaned dataset contained 239 complete rows.
+
+This cleaned dataset was then used for descriptive statistics, pivot tables, visualisations, and insight generation.
+
+3. Descriptive Statistics and Insight Generation
+
+After confirming that the dataset was cleaned and ready for analysis, descriptive statistics were used to summarise the main characteristics of the data. The analysis focuses on identifying meaningful patterns related to supermarket sales performance and supporting these findings with appropriate visualisations.
+
+3.1 Summary Statistics of Sales Performance
+Metric	Value
+Total Revenue	30,362.94 USD
+Total Quantity Sold	2,576
+Average Sales per Transaction	127.04 USD
+Highest Transaction Value	427.14 USD
+Lowest Transaction Value	2.18 USD
+
+The summary statistics show that the supermarket generated a total revenue of 30,362.94 USD from the cleaned dataset. The average sales value per transaction was 127.04 USD, while the highest transaction value reached 427.14 USD.
+
+3.2 Total Revenue by City
+City	Total Revenue
+Chicago	10,813.94 USD
+New York	10,613.69 USD
+Los Angeles	8,935.31 USD
+
+The revenue comparison shows that Chicago generated the highest total revenue, followed closely by New York. Los Angeles recorded the lowest total revenue among the three cities in the dataset.
+Row Labels	Sum of total_price
+Chicago	10813,94
+Los Angeles	8935,31
+New York	10613,69
+Grand Total	30362,94
+Key Insight 1: Chicago Generated the Highest Total Revenue
+
+Chicago generated the highest total revenue, with total sales of 10,813.94 USD, followed closely by New York with 10,613.69 USD. This shows that Chicago and New York were the strongest sales locations in the dataset. The supermarket can focus more on marketing activities and inventory planning in these cities to improve sales performance.
+
+3.3 Total Revenue by Product Category
+Product Category	Total Revenue
+Fruits	7,450.12 USD
+Beverages	6,463.17 USD
+Stationery	6,255.25 USD
+Household	5,684.81 USD
+Personal Care	4,509.59 USD
+
+The product category comparison shows that Fruits generated the highest total revenue, followed by Beverages and Stationery. Personal Care had the lowest revenue among the product categories.
+
+Row Labels	Sum of total_price
+Beverages	6463,17
+Fruits	7450,12
+Household	5684,81
+Personal Care	4509,59
+Stationery	6255,25
+Grand Total	30362,94
+
+Key Insight 2: Fruits Had the Highest Revenue Among Product Categories
+
+Fruits generated the highest total revenue, with total sales of 7,450.12 USD, followed by Beverages and Stationery. This indicates that Fruits contributed the most to supermarket revenue among all product categories. The supermarket should maintain sufficient stock for Fruits and consider suitable promotions to further increase sales in this category.
+
+4. Conclusion
+
+This exploratory data analysis examined the Supermarket Sales dataset to understand its structure, check data quality, and identify meaningful sales patterns. The dataset required basic cleaning because it contained missing values and duplicate rows. After cleaning, the final dataset contained 239 complete records and was suitable for further analysis.
+
+Two key findings were identified. First, Chicago generated the highest total revenue, followed closely by New York. Second, Fruits generated the highest revenue among all product categories. Overall, these findings suggest that sales performance differs across cities and product categories, which can support better marketing, inventory, and sales planning decisions.
